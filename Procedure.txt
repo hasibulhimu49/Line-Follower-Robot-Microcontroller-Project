@@ -1,0 +1,23 @@
+To connect the HW201 infrared sensors and the L298N motor driver to your Arduino Uno, follow these steps:
+
+*1. Connect the HW201 Infrared Sensors:*
+
+- Each HW201 sensor typically has three pins: VCC, GND, and OUT.
+- Connect the VCC pin of both sensors to the 5V pin on the Arduino Uno.
+- Connect the GND pin of both sensors to any GND pin on the Arduino Uno.
+- Connect the OUT pin of the left sensor to analog pin A0 on the Arduino Uno.
+- Connect the OUT pin of the right sensor to analog pin A1 on the Arduino Uno.
+
+*2. Connect the L298N Motor Driver:*
+
+- The L298N motor driver typically has four input pins for each motor (IN1, IN2 for Motor A, and IN3, IN4 for Motor B) and two enable pins (ENA for Motor A and ENB for Motor B) for controlling the speed.
+- Connect the ENA pin of the L298N motor driver to digital pin 9 on the Arduino Uno.
+- Connect the IN1 and IN2 pins of the L298N motor driver to any two digital pins on the Arduino Uno (e.g., 8 and 7 for Motor A).
+- Connect the ENB pin of the L298N motor driver to digital pin 10 on the Arduino Uno.
+- Connect the IN3 and IN4 pins of the L298N motor driver to any two other digital pins on the Arduino Uno (e.g., 6 and 5 for Motor B).
+- Make sure to also connect the GND pin of the L298N motor driver to any GND pin on the Arduino Uno.
+
+*3. Power Supply:*
+
+- Connect an external power supply (battery pack or similar) to the power input terminals of the L298N motor driver.
+- Make sure the power supply can provide enough current for your motors.
